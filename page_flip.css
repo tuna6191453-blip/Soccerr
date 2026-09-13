@@ -1,0 +1,49 @@
+/* Dark Mode Özelleştirme */
+body, .stApp {
+    background-color: #0E1117;
+    color: #FFFFFF;
+    font-family: 'Inter', sans-serif;
+}
+
+/* Defter / Kitap Sayfası Çevirme Animasyon Simülasyonu */
+.stTabs [data-baseweb="tab-panel"] {
+    animation: pageFlip 0.6s cubic-bezier(0.645, 0.045, 0.355, 1.000) both;
+    transform-origin: left center;
+    perspective: 1000px;
+}
+
+@keyframes pageFlip {
+    0% {
+        opacity: 0;
+        transform: rotateY(-15deg) scale(0.98);
+    }
+    100% {
+        opacity: 1;
+        transform: rotateY(0deg) scale(1);
+    }
+}
+
+/* Sinyal Kartları */
+.card-green {
+    border-left: 5px solid #00FF66;
+    background: #161B22;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 12px;
+}
+
+.card-red {
+    border-left: 5px solid #FF3366;
+    background: #161B22;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 12px;
+}
+
+.card-yellow {
+    border-left: 5px solid #FFCC00;
+    background: #161B22;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 12px;
+}
